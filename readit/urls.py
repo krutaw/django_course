@@ -19,11 +19,12 @@ from django.conf import settings
 from django.conf.urls import patterns
 
 
-from books.views import list_books
+from books.views import AuthorList, list_books
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
      url(r'^$', list_books, name='books'),
+     url(r'^authors/$', AuthorList.as_view(), name='authors'),
 ]
 
 
