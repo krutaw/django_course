@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'debug_toolbar',
+    #'debug_toolbar',
     'books',
 )
 
@@ -51,13 +51,13 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'readit.urls'
 
 #INTERNAL_IPS = ('192.168.0.93',)
-INTERNAL_IPS = ('0.0.0.0',)
+INTERNAL_IPS = ('0.0.0.0')
 
 TEMPLATES = [
     {
@@ -113,8 +113,8 @@ STATICFILES_DIRS = (
 )
 
 ##Django_debug_toolbar settings
-def show_toolbar(request):
-    return True
-DEBUG_TOOLBAR_CONFIG = {
-    "SHOW_TOOLBAR_CALLBACK" : show_toolbar,
-}
+#def show_toolbar(request):
+#    return True
+#DEBUG_TOOLBAR_CONFIG = {
+#    "SHOW_TOOLBAR_CALLBACK" : show_toolbar,
+#}
